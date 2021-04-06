@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  //Crainie_Michael_S1828588  -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back To List"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="112dp"
+        android:layout_height="214dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="200dp"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/standardButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Standard" />
+
+        <RadioButton
+            android:id="@+id/terrainButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Terrain" />
+
+        <RadioButton
+            android:id="@+id/satButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Satellite" />
+
+        <RadioButton
+            android:id="@+id/hybridButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hybrid" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/Charcoal"
+        android:gravity="center"
+        android:scaleY="1"
+        android:text="Crainie_Michael _S1828588"
+        android:textColor="@color/DarkGoldenrod"
+        android:textSize="24sp"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

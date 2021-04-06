@@ -1,0 +1,95 @@
+<!--  //Crainie_Michael_S1828588  -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollBar"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Press to get all data" />
+
+        <TextView
+            android:id="@+id/acknowledgement"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Contains British Geological Survey materials ©NERC 2019"
+            android:textSize="20sp" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="119dp">
+
+        </ListView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="151dp"
+            android:background="@color/Charcoal"
+            android:textColor="@color/DarkGoldenrod"
+            android:text="Click an object in the list view for more in depth information about the earthquake \n \nSearch a range of dates below to see earthquakes that occurred during that time period, this box will show the deepest/shallowest, highest/lowest magnitude and most north, south, east and west earthquake"  />
+
+        <Button
+            android:id="@+id/mapButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Press To See Map with markers from search" />
+
+
+        <Button
+            android:id="@+id/dateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Press to search within date range" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/calendarButton2"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:text="Pick Start Date" />
+
+            <Button
+                android:id="@+id/calendarButton"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:text="Pick End Date" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/startDate"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="02/02/2021"
+            android:translationX="75dp" />
+
+        <EditText
+            android:id="@+id/endDate"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="28/02/2021"
+            android:translationX="210dp"
+            android:translationY="-45dp" />
+
+
+    </LinearLayout>
+</ScrollView>
